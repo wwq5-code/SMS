@@ -12,6 +12,7 @@ python = 3.8.17
 pytorch = 2.0.0
 matplotlib
 numpy
+...
 ```
 
 
