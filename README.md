@@ -1,9 +1,9 @@
-# VMU
+# DUVW
 
-# Verifiable Machine Unlearning (VMU) via watermarking
+# Data Usage Verifiable Watermarking (DUVW) scheme
 
 ### Overview
-This repository is the official implementation of VMU, and the corresponding paper is under review.
+This repository is the official implementation of DUVW, and the corresponding paper is under review.
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ numpy
 
 ### Running the experiments
 
-1. To run the VMU on MNIST
+1. To run the DUVW on MNIST
 ```
 python /VMU/Verifiable_MU/On_MNIST/VMU_on_MNIST.py 
 ```
@@ -26,7 +26,7 @@ python /VMU/Verifiable_MU/On_MNIST/VMU_on_MNIST.py
 python /VMU/Verifiable_MU/On_MNIST/Membership_inf_via_backdoor/MIB_on_MNIST.py 
 ```
 
-3. To run the VMU on CIFAR10
+3. To run the DUVW on CIFAR10
 ```
 python /VMU/Verifiable_MU/On_CIFAR10/VMU_on_CIFAR10.py 
 ```
@@ -36,7 +36,7 @@ python /VMU/Verifiable_MU/On_CIFAR10/VMU_on_CIFAR10.py
 python /VMU/Verifiable_MU/On_CIFAR10/Membership_inf_via_backdoor/MIB_on_CIFAR10.py
 ```
 
-5. To run the VMU on CIFAR100
+5. To run the DUVW on CIFAR100
 ```
 python /VMU/Verifiable_MU/On_CIFAR100/VMU_on_CIFAR100.py 
 ```
