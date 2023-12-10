@@ -51,3 +51,20 @@ python /VMU/Verifiable_MU/On_CelebA/VMU_on_CelebA32.py
 ```
 python /VMU/Verifiable_MU/On_CelebA/MIB_method/MIB_on_CelebA.py
 ```
+
+
+**CelebA, MSR=0.6%**
+
+| Learning Verification | Non-Verif. | MIB       | DUVW   |
+| --------------------- | -----------| ----------| ------ |
+| Model Acc.            | 97.22%     | 97.20%    | 97.28% |
+| Verifiability         | -          | 93.27%    | 95.38% |
+| Unambiguity           | -          | 57.38%    | 90.77% |
+| Running time (s)      | 3015       |  3421     | 4225   |
+
+| Unlearning Verification | Non-Verif. | MIB          | DUVW    |
+| ----------------------- | -----------| ------------ | ------  |
+| Model Acc.              | 97.15%     | 97.17%       | 97.26%  |
+| Verifiability           | -          | 100%         | 3.41%   |
+| Unambiguity             | -          | 53.72%       | 98.21%  |
+

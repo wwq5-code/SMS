@@ -1301,7 +1301,7 @@ elif args.dataset == 'CelebA':
     test_transform = T.Compose([T.ToTensor(),
                                 ])  # T.Normalize((0.4914, 0.4822, 0.4465), (0.2464, 0.2428, 0.2608))
     #/kaggle/input/celeba/
-    data_path = 'data/CelebA'
+    data_path = '/kaggle/input/celeba'
     train_set = CelebA(data_path, split='train', target_type = 'attr', transform=train_transform, download=False)
     test_set = CelebA(data_path, split='test', target_type = 'attr', transform=train_transform, download=False)
 
@@ -1454,15 +1454,15 @@ for batch_idx, (x, y) in enumerate(dataloader_erased_with_trigger):
         x_cpu = x_cpu.clamp(0, 1)
         x_cpu = x_cpu.view(x_cpu.size(0), 3, 32, 32)
         grid = torchvision.utils.make_grid(x_cpu, nrow=4, cmap="gray")
-        # plt.imshow(np.transpose(grid, (1, 2, 0)))  # 交换维度，从GBR换成RGB
-        # plt.show()
+        plt.imshow(np.transpose(grid, (1, 2, 0)))  # 交换维度，从GBR换成RGB
+        plt.show()
 
         x_hat_cpu = x_hat.cpu().data
         x_hat_cpu = x_hat_cpu.clamp(0, 1)
         x_hat_cpu = x_hat_cpu.view(x_hat_cpu.size(0), 3, 32, 32)
         grid = torchvision.utils.make_grid(x_hat_cpu, nrow=4, cmap="gray")
-        # plt.imshow(np.transpose(grid, (1, 2, 0)))  # 交换维度，从GBR换成RGB
-        # plt.show()
+        plt.imshow(np.transpose(grid, (1, 2, 0)))  # 交换维度，从GBR换成RGB
+        plt.show()
 
 acc = num_correct / num_total
 acc = round(acc, 5)
