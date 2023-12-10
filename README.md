@@ -42,3 +42,12 @@ python /VMU/Verifiable_MU/On_CIFAR10/Membership_inf_via_backdoor/MIB_on_CIFAR10.
 python /VMU/Verifiable_MU/On_CIFAR100/VMU_on_CIFAR100.py 
 ```
 
+6. To run the DUVW on CelebA
+```
+python /VMU/Verifiable_MU/On_CelebA/VMU_on_CelebA32.py 
+```
+
+7. To run the MIB on CelebA
+```
+python /VMU/Verifiable_MU/On_CelebA/MIB_method/MIB_on_CelebA.py
+```
