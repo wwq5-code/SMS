@@ -24,7 +24,7 @@ plt.figure()
 #plt.bar(x - width / 2 - width / 8 + width / 8, unl_vbr, width=0.168, label='VBU', color='orange', hatch='\\')
 plt.bar(x - width / 8 - width / 7,   non_verif, width=0.21168, label='Non-Verif.', color='deepskyblue', hatch='\\') #unl_vib, width=0.168, label='MCFU$_{w}$', color='palegreen', hatch='/')
 plt.bar(x + width / 8, mib, width=0.21168, label='MIB', color='orange', hatch='x')
-plt.bar(x + width / 2 - width / 8 + width / 7, vmu, width=0.21168, label='VMU', color='g', hatch='-')
+plt.bar(x + width / 2 - width / 8 + width / 7, vmu, width=0.21168, label='DUVW', color='g', hatch='-')
 
 
 # plt.bar(x - width / 2.5 ,  unl_vbr, width=width/3, label='VBU', color='orange', hatch='\\')
