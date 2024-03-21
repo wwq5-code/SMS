@@ -69,3 +69,4 @@ python /VMU/Verifiable_MU/On_CelebA/MIB_method/MIB_on_CelebA.py
 | Verifiability           | -          | 100%         | 3.41%   |
 | Unambiguity             | -          | 53.72%       | 98.21%  |
 
+
