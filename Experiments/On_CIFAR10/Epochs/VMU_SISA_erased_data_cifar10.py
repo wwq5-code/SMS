@@ -108,5 +108,5 @@ plt.rcParams['figure.subplot.left'] = 0.11
 plt.rcParams['figure.subplot.bottom'] = 0.08
 plt.rcParams['figure.subplot.right'] = 0.977
 plt.rcParams['figure.subplot.top'] = 0.969
-plt.savefig('vmu_sisa_erased_data_cifar10.png', dpi=200)
+plt.savefig('vmu_sisa_erased_data_cifar10.pdf', format='pdf', dpi=200)
 plt.show()

@@ -24,7 +24,7 @@ plt.figure()
 #plt.bar(x - width / 2 - width / 8 + width / 8, unl_vbr, width=0.168, label='VBU', color='orange', hatch='\\')
 plt.bar(x - width / 8 - width / 7,   non_verif, width=0.21168, label='Non-Verif.', color='deepskyblue', hatch='\\') #unl_vib, width=0.168, label='MCFU$_{w}$', color='palegreen', hatch='/')
 plt.bar(x + width / 8, mib, width=0.21168, label='MIB', color='orange', hatch='x')
-plt.bar(x + width / 2 - width / 8 + width / 7, vmu, width=0.21168, label='DUVW', color='g', hatch='-')
+plt.bar(x + width / 2 - width / 8 + width / 7, vmu, width=0.21168, label='SSW', color='g', hatch='-')
 
 
 # plt.bar(x - width / 2.5 ,  unl_vbr, width=width/3, label='VBU', color='orange', hatch='\\')
@@ -56,5 +56,5 @@ plt.rcParams['figure.subplot.left'] = 0.11
 plt.rcParams['figure.subplot.bottom'] = 0.08
 plt.rcParams['figure.subplot.right'] = 0.977
 plt.rcParams['figure.subplot.top'] = 0.969
-plt.savefig('cifar10_rt_msr_bar.png', dpi=200)
+plt.savefig('cifar10_rt_msr_bar.pdf', format='pdf', dpi=200)
 plt.show()

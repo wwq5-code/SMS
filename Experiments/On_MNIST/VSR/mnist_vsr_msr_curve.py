@@ -30,7 +30,7 @@ l_w=5
 m_s=15
 #plt.figure(figsize=(8, 5.3))
 #plt.plot(x, unl_fr, color='blue', marker='^', label='Retrain',linewidth=l_w, markersize=m_s)
-plt.plot(x, vmu, color='g',  marker='*',  label='DUVW',linewidth=l_w, markersize=m_s)
+plt.plot(x, vmu, color='g',  marker='*',  label='SSW',linewidth=l_w, markersize=m_s)
 #plt.plot(x, unl_ss_wo, color='palegreen',  marker='1',  label='MCFU$_{w/o}$',linewidth=l_w, markersize=m_s)
 
 plt.plot(x, mib, color='orange',  marker='x',  label='MIB',linewidth=l_w,  markersize=m_s)
@@ -47,16 +47,17 @@ plt.plot(x, mib, color='orange',  marker='x',  label='MIB',linewidth=l_w,  marke
 
 
 # plt.grid()
-leg = plt.legend(fancybox=True, shadow=True)
+# leg = plt.legend(fancybox=True, shadow=True)
 # plt.xlabel('Malicious Client Ratio (%)' ,fontsize=16)
-plt.ylabel('Accuracy (%)' ,fontsize=20)
-my_y_ticks = np.arange(0 ,100.1,20)
+plt.ylabel('Verifiability (%)' ,fontsize=20)
+my_y_ticks = np.arange(90,101, 2)
 plt.yticks(my_y_ticks,fontsize=20)
+plt.ylim((89,101))
 plt.xlabel('$\it{MSR}$' ,fontsize=20)
 
 plt.xticks(x, labels, fontsize=20)
 # plt.title('CIFAR10 IID')
-plt.legend(loc='best',fontsize=20)
+plt.legend(loc='lower right',fontsize=20)
 plt.tight_layout()
 #plt.title("MNIST")
 plt.rcParams['figure.figsize'] = (2.0, 1)
@@ -65,5 +66,5 @@ plt.rcParams['figure.subplot.left'] = 0.11
 plt.rcParams['figure.subplot.bottom'] = 0.08
 plt.rcParams['figure.subplot.right'] = 0.977
 plt.rcParams['figure.subplot.top'] = 0.969
-plt.savefig('mnist_vsr_msr_curve.png', dpi=200)
+plt.savefig('mnist_vsr_msr_curve.pdf', format='pdf', dpi=200)
 plt.show()
