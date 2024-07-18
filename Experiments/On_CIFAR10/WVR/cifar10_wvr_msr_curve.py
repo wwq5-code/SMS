@@ -26,14 +26,14 @@ vmu = [95.00, 98.00, 96.67, 97.25, 94.80]
 
 
 plt.figure()
-l_w=5
-m_s=15
+l_w=6.5
+m_s=20
 #plt.figure(figsize=(8, 5.3))
 #plt.plot(x, unl_fr, color='blue', marker='^', label='Retrain',linewidth=l_w, markersize=m_s)
-plt.plot(x, vmu, color='g',  marker='*',  label='SSW',linewidth=l_w, markersize=m_s)
+plt.plot(x, vmu, color='g',  marker='o',  label='SSW',linewidth=l_w, markersize=m_s)
 #plt.plot(x, unl_ss_wo, color='palegreen',  marker='1',  label='MCFU$_{w/o}$',linewidth=l_w, markersize=m_s)
 
-plt.plot(x, mib, color='orange',  marker='x',  label='MIB',linewidth=l_w,  markersize=m_s)
+plt.plot(x, mib, color='orange',  marker='^',  label='MIB',linewidth=l_w,  markersize=m_s)
 
 #plt.plot(x, non_verify, color='deepskyblue',  marker='p',  label='Non-Verif.',linewidth=l_w, markersize=m_s)
 
@@ -50,9 +50,9 @@ plt.plot(x, mib, color='orange',  marker='x',  label='MIB',linewidth=l_w,  marke
 leg = plt.legend(fancybox=True, shadow=True)
 # plt.xlabel('Malicious Client Ratio (%)' ,fontsize=16)
 plt.ylabel('Unambiguity (%)' ,fontsize=20)
-my_y_ticks = np.arange(90, 100.1, 2)
+my_y_ticks = np.arange(0, 100.1, 20)
 plt.yticks(my_y_ticks,fontsize=20)
-plt.ylim((89,101))
+plt.ylim((-5,105))
 plt.xlabel('$\it{MSR}$' ,fontsize=20)
 
 plt.xticks(x, labels, fontsize=20)

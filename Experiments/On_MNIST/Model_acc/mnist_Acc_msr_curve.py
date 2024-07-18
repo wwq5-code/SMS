@@ -15,7 +15,7 @@ x=[1, 2, 3, 4, 5]
 # basic_for_plt=[99.8, 99.8, 99.8, 99.8, 99.8]
 
 labels = ['0.2%', '0.4%', '0.6%', '0.8%', '1%' ]
-non_verify= [99.39, 99.49, 99.39, 99.45, 99.398]
+non_verify= [99.39, 99.439, 99.39, 99.45, 99.398]
 # non_verify= [100, 100, 100, 100, 100]
 
 mib = [99.32, 99.30, 99.31, 99.28, 99.38]
@@ -29,14 +29,14 @@ vmu = [99.49, 99.50, 99.46, 99.52, 99.43]
 
 
 plt.figure()
-l_w=5
-m_s=15
+l_w=6.5
+m_s=20
 #plt.figure(figsize=(8, 5.3))
 #plt.plot(x, unl_fr, color='blue', marker='^', label='Retrain',linewidth=l_w, markersize=m_s)
-plt.plot(x, vmu, color='g',  marker='*',  label='SSW',linewidth=l_w, markersize=m_s)
+plt.plot(x, vmu, color='g',  marker='o',  label='SSW',linewidth=l_w, markersize=m_s)
 #plt.plot(x, unl_ss_wo, color='palegreen',  marker='1',  label='MCFU$_{w/o}$',linewidth=l_w, markersize=m_s)
 
-plt.plot(x, mib, color='orange',  marker='x',  label='MIB',linewidth=l_w,  markersize=m_s)
+plt.plot(x, mib, color='orange',  marker='^',  label='MIB',linewidth=l_w,  markersize=m_s)
 
 plt.plot(x, non_verify, color='deepskyblue',  marker='p',  label='Non-Verif.',linewidth=l_w, markersize=m_s)
 

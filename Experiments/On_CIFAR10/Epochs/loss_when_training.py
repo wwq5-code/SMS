@@ -44,7 +44,7 @@ for i in range(50):
 
 plt.figure()
 lw=5
-plt.plot(x, acc_tri_s, color='g', linestyle='-',  label='Primary (DUVW)',linewidth=lw, markersize=10)
+plt.plot(x, acc_tri_s, color='g', linestyle='-',  label='Primary (SSW)',linewidth=lw, markersize=10)
 plt.plot(x, acc_back_p_s, color='deepskyblue', linestyle=(0,(2,1,1,1)),   label='Primary (MIB)',linewidth=lw,  markersize=10)
 # #plt.plot(x, y_fkl, color='g',  marker='+',  label='VRFL')
 plt.plot(x, acc_back_s, color='orange', linestyle=(0, (3, 1, 1, 1)),  label='Backdooring',linewidth=lw, markersize=10)

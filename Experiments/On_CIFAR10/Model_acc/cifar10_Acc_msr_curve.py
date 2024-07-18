@@ -26,14 +26,14 @@ vmu = [89.63, 89.24, 89.57, 89.74, 89.43]
 
 
 plt.figure()
-l_w=5
-m_s=15
+l_w=6.5
+m_s=20
 #plt.figure(figsize=(8, 5.3))
 #plt.plot(x, unl_fr, color='blue', marker='^', label='Retrain',linewidth=l_w, markersize=m_s)
-plt.plot(x, vmu, color='g',  marker='*',  label='SSW',linewidth=l_w, markersize=m_s)
+plt.plot(x, vmu, color='g',  marker='o',  label='SSW',linewidth=l_w, markersize=m_s)
 #plt.plot(x, unl_ss_wo, color='palegreen',  marker='1',  label='MCFU$_{w/o}$',linewidth=l_w, markersize=m_s)
 
-plt.plot(x, mib, color='orange',  marker='x',  label='MIB',linewidth=l_w,  markersize=m_s)
+plt.plot(x, mib, color='orange',  marker='^',  label='MIB',linewidth=l_w,  markersize=m_s)
 
 plt.plot(x, non_verify, color='deepskyblue',  marker='p',  label='Non-Verif.',linewidth=l_w, markersize=m_s)
 
