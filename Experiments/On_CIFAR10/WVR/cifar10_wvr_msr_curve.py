@@ -30,7 +30,7 @@ l_w=6.5
 m_s=20
 #plt.figure(figsize=(8, 5.3))
 #plt.plot(x, unl_fr, color='blue', marker='^', label='Retrain',linewidth=l_w, markersize=m_s)
-plt.plot(x, vmu, color='g',  marker='o',  label='SSW',linewidth=l_w, markersize=m_s)
+plt.plot(x, vmu, color='g',  marker='o',  label='SMS',linewidth=l_w, markersize=m_s)
 #plt.plot(x, unl_ss_wo, color='palegreen',  marker='1',  label='MCFU$_{w/o}$',linewidth=l_w, markersize=m_s)
 
 plt.plot(x, mib, color='orange',  marker='^',  label='MIB',linewidth=l_w,  markersize=m_s)
@@ -53,7 +53,7 @@ plt.ylabel('Unambiguity (%)' ,fontsize=20)
 my_y_ticks = np.arange(0, 100.1, 20)
 plt.yticks(my_y_ticks,fontsize=20)
 plt.ylim((-5,105))
-plt.xlabel('$\it{MSR}$' ,fontsize=20)
+plt.xlabel('$\it{SSR}$' ,fontsize=20)
 
 plt.xticks(x, labels, fontsize=20)
 # plt.title('CIFAR10 IID')

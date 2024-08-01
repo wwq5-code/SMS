@@ -43,13 +43,13 @@ for i in range(50):
 
 plt.figure()
 lw=5
-plt.plot(x, acc_tri_s, color='g', linestyle='-',  label='Primary (SSW)',linewidth=lw, markersize=10)
+plt.plot(x, acc_tri_s, color='g', linestyle='-',  label='Primary (SMS)',linewidth=lw, markersize=10)
 plt.plot(x, acc_back_p_s, color='deepskyblue', linestyle=(0,(2,1,1,1)),   label='Primary (MIB)',linewidth=lw,  markersize=10)
 # #plt.plot(x, y_fkl, color='g',  marker='+',  label='VRFL')
 plt.plot(x, acc_back_s, color='orange', linestyle=(0, (3, 1, 1, 1)),  label='Backdooring',linewidth=lw, markersize=10)
 # #plt.plot(x, y_fkl, color='g',  marker='+',  label='VRFL')
 
-plt.plot(x, acc_test_s, color='tan', linestyle='--',   label='Watermarking',linewidth=lw,  markersize=10)
+plt.plot(x, acc_test_s, color='tan', linestyle='--',   label='Model Seeding',linewidth=lw,  markersize=10)
 
 #
 #
@@ -82,7 +82,7 @@ plt.yticks(my_y_ticks,fontsize=20)
 my_x_ticks = np.arange(0, 51, 5)
 plt.xticks(my_x_ticks,fontsize=20)
 # plt.title('CIFAR10 IID')
-plt.legend(loc='center left',fontsize=20) # best
+plt.legend(loc='best',fontsize=20) # best
 # plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
 #            ncol=3, mode="expand", borderaxespad=0., fontsize=16)
 

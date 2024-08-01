@@ -44,16 +44,16 @@ for i in range(50):
 
 plt.figure()
 lw=5
-plt.plot(x, acc_tri_s, color='g', linestyle='-',  label='On $D_{e_1,w_1}$',linewidth=lw, markersize=10)
+plt.plot(x, acc_tri_s, color='g', linestyle='-',  label='On $D_{e_1,s_1}$',linewidth=lw, markersize=10)
 # #plt.plot(x, y_fkl, color='g',  marker='+',  label='VRFL')
-plt.plot(x, acc_back_s, color='orange', linestyle=(0, (3, 1, 1, 1)),  label='On $D_{e_2,w_2}$',linewidth=lw, markersize=10)
+plt.plot(x, acc_back_s, color='orange', linestyle=(0, (3, 1, 1, 1)),  label='On $D_{e_2,s_2}$',linewidth=lw, markersize=10)
 # #plt.plot(x, y_fkl, color='g',  marker='+',  label='VRFL')
 
 plt.plot(x, acc_test_s, color='tan', linestyle='--',   label='On Test Data',linewidth=lw,  markersize=10)
 # plt.plot(x, acc_watermar_s, color='b', linestyle=(0,(2,1,1,1)),   label='Wa. Classify',linewidth=lw,  markersize=10)
 
 # plt.plot([-10,130],[100, 100], color='sandybrown', label='Ob.-Rem.',linewidth=2,  markersize=10)
-plt.plot([14,14],[-10, 110], color='blue', label='Watermark $w_1$ disappear',linewidth=lw-2,  markersize=10)
+plt.plot([14,14],[-10, 110], color='blue', label='Seed $s_1$ disappear',linewidth=lw-2,  markersize=10)
 #
 
 #
